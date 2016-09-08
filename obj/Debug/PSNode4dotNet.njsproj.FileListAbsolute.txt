@@ -1,0 +1,2 @@
+C:\Git\Node\Lrn\PSNode4dotNet\obj\Debug\PSNode4dotNet.njsprojResolveAssemblyReference.cache
+C:\Git\Node\Lrn\PSNode4dotNet\bin\Microsoft.NodejsTools.WebRole.dll
