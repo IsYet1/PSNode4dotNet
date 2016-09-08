@@ -7,3 +7,7 @@ var x = {
 
 console.log(x.name + " " + x.birthplace);
 
+var msgs = require("./msgs.js");
+console.log(msgs.first);
+
+
