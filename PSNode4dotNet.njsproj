@@ -19,6 +19,7 @@
     <Content Include="README.md" />
     <Compile Include="Module1\app.js" />
     <Compile Include="Module1\msgs.js" />
+    <Compile Include="Module1\msgsFunc.js" />
     <Compile Include="Module1\test.js" />
   </ItemGroup>
   <ItemGroup>

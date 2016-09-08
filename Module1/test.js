@@ -7,9 +7,11 @@ var x = {
 
 console.log(x.name + " " + x.birthplace);
 
-var msgs = require("./msgs.js");
+var msgs =      require("./msgs.js");
+var msgsFunc =  require("./msgsFunc.js");
+
 console.log(msgs.first);
 console.log(msgs.second);
 console.log(msgs.third);
 
-
+console.log(msgsFunc());
