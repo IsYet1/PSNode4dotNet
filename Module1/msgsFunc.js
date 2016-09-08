@@ -1,3 +1,3 @@
-﻿module.exports = function() {
-    return "Message from function"
+﻿module.exports = function(parm) {
+    return "Message from function " + parm;
 }
