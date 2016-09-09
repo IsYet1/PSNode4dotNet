@@ -20,6 +20,7 @@
     <Content Include="Module1\node_modules\underscore\package.json" />
     <Content Include="Module1\node_modules\underscore\README.md" />
     <Content Include="Module1\node_modules\underscore\underscore-min.map" />
+    <Content Include="Module1\package.json" />
     <Content Include="README.md" />
     <Compile Include="Module1\app.js" />
     <Compile Include="Module1\logger\file.js" />

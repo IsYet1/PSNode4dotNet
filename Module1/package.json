@@ -1,0 +1,13 @@
+{
+  "name": "FunWithNodeM1",
+  "version": "0.0.0",
+  "description": "FunWithnodeM1",
+  "main": "app.js",
+  "author": {
+    "name": "Don",
+    "email": ""
+  },
+  "dependencies": {
+    "underscore": "~1.8.3"
+  }
+}
