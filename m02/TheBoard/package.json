@@ -1,9 +1,10 @@
 {
   "name": "the-board",
-  "version": "0.0.0",
-  "description": "TheBoard",
+  "version": "0.1.0",
+  "description": "A Message Board based on Sticky Notes.",
   "main": "server.js",
   "author": {
-    "name": "DonMc"
+    "name": "Don",
+    "email": "don@isyet.com"
   }
 }
