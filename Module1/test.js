@@ -23,3 +23,7 @@ console.log(msgsCtor.first);
 var logger = require("./logger");
 var loggerObj = new logger.log("Logger did this");
 //console.log();
+
+var tf = false;
+var _ = require("underscore");
+_.contains("test", tf);

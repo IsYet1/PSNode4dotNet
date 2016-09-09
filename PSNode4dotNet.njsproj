@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{72ccd153-13b0-48da-833b-c0a298c4d1ed}</ProjectGuid>
     <ProjectHome />
-    <ProjectView>ProjectFiles</ProjectView>
+    <ProjectView>ShowAllFiles</ProjectView>
     <StartupFile>Module1\test.js</StartupFile>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
@@ -16,6 +16,10 @@
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
   <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
   <ItemGroup>
+    <Content Include="Module1\node_modules\underscore\LICENSE" />
+    <Content Include="Module1\node_modules\underscore\package.json" />
+    <Content Include="Module1\node_modules\underscore\README.md" />
+    <Content Include="Module1\node_modules\underscore\underscore-min.map" />
     <Content Include="README.md" />
     <Compile Include="Module1\app.js" />
     <Compile Include="Module1\logger\file.js" />
@@ -23,11 +27,15 @@
     <Compile Include="Module1\msgs.js" />
     <Compile Include="Module1\msgsConstructor.js" />
     <Compile Include="Module1\msgsFunc.js" />
+    <Compile Include="Module1\node_modules\underscore\underscore-min.js" />
+    <Compile Include="Module1\node_modules\underscore\underscore.js" />
     <Compile Include="Module1\test.js" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Module1" />
     <Folder Include="Module1\logger\" />
+    <Folder Include="Module1\node_modules\" />
+    <Folder Include="Module1\node_modules\underscore\" />
     <Folder Include="typings\" />
     <Folder Include="typings\globals\" />
     <Folder Include="typings\globals\node\" />
