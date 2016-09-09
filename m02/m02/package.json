@@ -1,0 +1,10 @@
+{
+  "name": "TheBoard",
+  "version": "0.1.0",
+  "description": "A message board based on Sticky Notes.",
+  "main": "server.js",
+  "author": {
+    "name": "Don",
+    "email": "don@isyet.com"
+  }
+}
