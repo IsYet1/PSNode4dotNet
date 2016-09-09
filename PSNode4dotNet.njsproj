@@ -18,6 +18,7 @@
   <ItemGroup>
     <Content Include="README.md" />
     <Compile Include="Module1\app.js" />
+    <Compile Include="Module1\logger\file.js" />
     <Compile Include="Module1\logger\index.js" />
     <Compile Include="Module1\msgs.js" />
     <Compile Include="Module1\msgsConstructor.js" />
