@@ -6,5 +6,8 @@
   "author": {
     "name": "Don",
     "email": "don@isyet.com"
+  },
+  "dependencies": {
+    "express": "^4.14.0"
   }
 }
