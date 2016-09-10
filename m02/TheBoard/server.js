@@ -6,7 +6,7 @@ app.set("view engine", "jade");
 
 app.get("/", function (req, res) {
     //res.send("<html><body><h1>" + "Express 1509" + "</h1></body></html>");
-    res.render("jade/index", { title: "Express + Jade" });
+    res.render("jade/index", { title: "Express + Jade", moreText: "With layout" });
 });
 
 app.get("/api/users", function (req, res) {
