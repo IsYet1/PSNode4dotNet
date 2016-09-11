@@ -15,7 +15,7 @@ app.set("view engine", "vash");
 // Set the public static resourc folder
 app.use(express.static(__dirname + "/public"));
 
-//Map the routes
+//Map the routes. Some change for grunt test.
 controllers.init(app);
 
 

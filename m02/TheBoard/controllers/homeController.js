@@ -10,7 +10,7 @@
             //res.render("ejs/index", { title: "Express + EJS", moreText: "With layout" });
 
             data.getNoteCategories(function (err, results) {
-                res.render("index", { title: "Express + Vash + Controller", moreText: "With layout", error: err, categories: results });
+                res.render("index", { title: "Express + Vash + Controller + Grunt", moreText: "With layout", error: err, categories: results });
             });
 
 

@@ -1,0 +1,91 @@
+    1  cd ~
+    2  vi .dircolors 
+    3  myVIbashrc 
+    4  cd $cur
+    5  cd Module1/
+    6  ll
+    7  npm install underscore
+    8  ll
+    9  c
+   10  node test
+   11  cls
+   12  c
+   13  npm uninstall underscore
+   14  ls
+   15  ll
+   16  ll node_modules/
+   17  npm install underscore --save
+   18  npm install express --save
+   19  c
+   20  npm install
+   21  node test
+   22  npm install
+   23  node test
+   24  cd $cur
+   25  cd M01
+   26  dir
+   27  ll
+   28  cd m01
+   29  node test
+   30  cd ../m02
+   31  dir
+   32  ls
+   33  cd m02
+   34  dir
+   35  cd..
+   36  cd ..
+   37  dir
+   38  cd ..
+   39  cd m02
+   40  dir
+   41  cd TheBoard/
+   42  dir
+   43  node server
+   44  dir n*
+   45  dir node*
+   46  dir node_modules/
+   47  cd node_modules/
+   48  dir
+   49  ll
+   50  cd ..
+   51  npm install underscore --save
+   52  node server
+   53  npm install jade --save
+   54  node server
+   55  npm install ejs
+   56  npm install ejs-locals
+   57  node server
+   58  npm install vash
+   59  node server
+   60  c
+   61  node server
+   62  c
+   63  node server
+   64  c
+   65  node server
+   66  npm install bower --save-dev
+   67  npm uninstall bower --save-dev
+   68  npm install bower -g
+   69  sudo npm -install bower -g
+   70  npm list
+   71  sudo npm -install bower -g
+   72  npm -install bower -g
+   73  sodu npm install bower -g
+   74  sudo npm install bower -g
+   75  bower install underscore
+   76  bower uninstall underscore
+   77  bower install underscore
+   78  bower install bootstrap
+   79  node server
+   80  sudo npm install grunt-cli -g
+   81  npm install grunt-nodemon --save-dev
+   82  c
+   83  grunt
+   84  c
+   85  grunt
+   86  history
+   87  cat ~/.bash_history
+   88  sudo cat ~/.bash_history
+   89  history
+   90  history | history.txt
+   91  history > history.txt
