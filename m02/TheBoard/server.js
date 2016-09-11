@@ -3,6 +3,8 @@ var express = require("express");
 var app = express();
 var ejsEngine = require("ejs-locals"); 
 
+var controllers = require("./controllers");
+
 //app.set("view engine", "jade");
 
 //app.engine("ejs", ejsEngine);   //Add ejs master pages
@@ -10,15 +12,10 @@ var ejsEngine = require("ejs-locals");
 
 app.set("view engine", "vash");
 
-app.get("/", function (req, res) {
-    //res.send("<html><body><h1>" + "Express 1509" + "</h1></body></html>");
-    //res.render("jade/index", { title: "Express + Jade", moreText: "With layout" });
-    //res.render("ejs/index", { title: "Express + EJS", moreText: "With layout" });
 
-    /*Starting with Vash, he moved the index directly into the View folder. Will be useing it from here on */
-    res.render("index", { title: "Express + Vash", moreText: "With layout" });
+//Map the routes
+controllers.init(app);
 
-});
 
 app.get("/api/users", function (req, res) {
     res.set("Content-Type", "application/json");
