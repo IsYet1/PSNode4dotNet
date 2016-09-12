@@ -6,10 +6,14 @@
     //Async function. Will call next to tell the caller when it's done and if it was success or failure.
     data.getNoteCategories = function (next) {
         database.getDb(function (err, db) {
+            var findObj = { name: "History" };
+            findObj = { notes: { $size: 5 } };
+            findObj = { name: "People" };
+            findObj = { notes: { $not: { $size: 3 }} };
             if (err) {
                 next (err, null); //Continue on with the async chain
             } else {
-                db.notes.find({ name: "People" }).toArray(function (err, results) {
+                db.notes.find(findObj).toArray(function (err, results) {
                     if (err) {
                         next(err, null);
                     } else {
