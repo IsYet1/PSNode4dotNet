@@ -9,7 +9,7 @@
             if (err) {
                 next (err, null); //Continue on with the async chain
             } else {
-                db.notes.find().toArray(function (err, results) {
+                db.notes.find({ name: "People" }).toArray(function (err, results) {
                     if (err) {
                         next(err, null);
                     } else {
