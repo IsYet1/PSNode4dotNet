@@ -13,7 +13,8 @@
                     next(err, null);
                 } else {
                     theDb = {
-                        db: db
+                        db: db,
+                        notes: db.collection("notes") //Get the Notes collection if it's there. Stored in object so it can be reused.
                     };
                     next(null, theDb);
                 }

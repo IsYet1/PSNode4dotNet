@@ -1,5 +1,5 @@
 (function (seedData) {
-    seedData.initialNodes = [{
+    seedData.initialNotes = [{
         name: "History",
         notes: [{
             note: "Testing history",
