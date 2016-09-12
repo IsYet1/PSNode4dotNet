@@ -32,8 +32,10 @@
   <ItemGroup>
     <Compile Include="controllers\homeController.js" />
     <Compile Include="controllers\index.js" />
+    <Compile Include="data\database.js" />
     <Compile Include="data\index.js" />
     <Compile Include="data\seedData.js" />
+    <Compile Include="gruntfile.js" />
     <Compile Include="server.js" />
     <Content Include="package.json" />
     <Content Include="public\css\site.css" />
@@ -49,10 +51,13 @@
   <ItemGroup>
     <Folder Include="controllers\" />
     <Folder Include="data\" />
+    <Folder Include="mongodb\" />
+    <Folder Include="mongodb\data\" />
     <Folder Include="public\" />
     <Folder Include="public\css\" />
     <Folder Include="typings\globals\ejs-locals\" />
     <Folder Include="typings\globals\ejs\" />
+    <Folder Include="typings\globals\mongodb\" />
     <Folder Include="views\" />
     <Folder Include="typings\" />
     <Folder Include="typings\globals\" />
@@ -68,6 +73,7 @@
     <TypeScriptCompile Include="typings\globals\ejs\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\express\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\jade\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\mongodb\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\node\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\underscore\index.d.ts" />
     <TypeScriptCompile Include="typings\index.d.ts" />
