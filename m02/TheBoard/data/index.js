@@ -5,19 +5,7 @@
 
     //Async function. Will call next to tell the caller when it's done and if it was success or failure.
     data.getNoteCategories = function (next) {
-        database.getDb(function (err, db) {
-            if (err) {
-                next (err, null); //Continue on with the async chain
-            } else {
-                db.notes.find().toArray(function (err, results) {
-                    if (err) {
-                        next(err, null);
-                    } else {
-                        next(null, results);
-                    }
-                });
-            }
-        });
+        next(null, seedData.initialNotes);
     };
 
     function seedDatabase() {
