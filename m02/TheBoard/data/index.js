@@ -14,7 +14,7 @@
             if (err) {
                 next(err, null); //Continue on with the async chain
             } else {
-                db.notes.find(findObj).sort({ name: -1 }).toArray(function (err, results) {
+                db.notes.find(findObj).sort({ name: 1 }).toArray(function (err, results) {
                     if (err) {
                         next(err, null);
                     } else {
