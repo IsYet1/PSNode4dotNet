@@ -9,11 +9,12 @@
             var findObj = { name: "History" };
             findObj = { notes: { $size: 5 } };
             findObj = { name: "People" };
-            findObj = { notes: { $not: { $size: 3 }} };
+            findObj = { notes: { $not: { $size: 3 } } };
+            findObj = {};
             if (err) {
-                next (err, null); //Continue on with the async chain
+                next(err, null); //Continue on with the async chain
             } else {
-                db.notes.find(findObj).toArray(function (err, results) {
+                db.notes.find(findObj).sort({ name: -1 }).toArray(function (err, results) {
                     if (err) {
                         next(err, null);
                     } else {
