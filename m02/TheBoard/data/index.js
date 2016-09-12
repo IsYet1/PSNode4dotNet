@@ -13,6 +13,7 @@
                     if (err) {
                         next(err, null);
                     } else {
+                        console.log("Found notes results ok. Count: " + results.length);
                         next(null, results);
                     }
                 });
