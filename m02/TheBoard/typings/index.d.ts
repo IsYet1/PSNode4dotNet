@@ -1,3 +1,4 @@
+/// <reference path="globals/body-parser/index.d.ts" />
 /// <reference path="globals/ejs-locals/index.d.ts" />
 /// <reference path="globals/ejs/index.d.ts" />
 /// <reference path="globals/express/index.d.ts" />

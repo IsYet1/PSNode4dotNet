@@ -17,7 +17,8 @@
         });
 
         app.post("/newCategory", function (req, res) {
-            var categoryName = req.body.categoryName;
+            var categoryName = req.body.categoryName; //Form data will be in the request body. req.body. Form encoded data.
+            console.log(categoryName);
             data.createNewCategory(categoryName, function (err) {
                 if (err) {
                     console.log(err);
