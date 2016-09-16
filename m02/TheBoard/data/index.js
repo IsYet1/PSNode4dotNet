@@ -29,17 +29,27 @@
     data.createNewCategory = function (categoryName, next) {
         database.getDb(function (err, db) {
             if (err) {
-                next(err, null);
+                next(err);
             } else {
-                var cat = {
-                    name: categoryName,
-                    notes: [] // Need to add this empty array so that any count functions will work
-                };
-                db.notes.insert(cat, function (err) {
+                db.notes.find({ name: categoryName }).count(function (err, count) {
                     if (err) {
                         next(err);
                     } else {
-                        next(null);
+                        if (count != 0) {
+                            next("Category already exists");
+                        } else {
+                            var cat = {
+                                name: categoryName,
+                                notes: [] // Need to add this empty array so that any count functions will work
+                            };
+                            db.notes.insert(cat, function (err) {
+                                if (err) {
+                                    next(err);
+                                } else {
+                                    next(null);
+                                }
+                            });
+                        }
                     }
                 });
             }
