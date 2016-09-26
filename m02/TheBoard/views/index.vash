@@ -19,7 +19,7 @@
 
 	<div class="row">
 		
-		@if (model.newCategoryError){
+		@if (model.newCatError){
 			<p class="text-warning">@model.newCatError</p>
 		}
 
