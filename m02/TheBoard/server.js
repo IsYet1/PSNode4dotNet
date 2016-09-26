@@ -6,6 +6,8 @@ var ejsEngine = require("ejs-locals");
 
 var controllers = require("./controllers");
 
+var flash = require("connect-flash");
+
 //app.set("view engine", "jade");
 
 //app.engine("ejs", ejsEngine);   //Add ejs master pages
@@ -16,6 +18,11 @@ app.set("view engine", "vash");
 //Opt into Express Services
 //app.use(bodyParser.urlencoded());
 app.use(bodyParser.urlencoded({ extended: false }))
+
+//Opt into connect-flash and session state
+app.use(express.cookieParser());
+app.use(express.session({ secret: "EncryptionKeyCanBeAnything" }));
+app.use(flash());
 
 // Set the public static resourc folder
 app.use(express.static(__dirname + "/public"));

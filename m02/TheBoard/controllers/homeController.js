@@ -10,7 +10,13 @@
             //res.render("ejs/index", { title: "Express + EJS", moreText: "With layout" });
 
             data.getNoteCategories(function (err, results) {
-                res.render("index", { title: "Express + Vash + Controller + Grunt", moreText: "With layout", error: err, categories: results });
+                res.render("index", {
+                    title: "The Board",
+                    moreText: "With layout",
+                    error: err,
+                    categories: results,
+                    newCatError: req.flash("newCatName")
+                });
             });
 
 
@@ -22,6 +28,7 @@
             data.createNewCategory(categoryName, function (err) {
                 if (err) {
                     console.log(err);
+                    req.flash("newCatName", err);
                     res.redirect("/");
                 } else {
                     res.redirect("/notes/" + categoryName);

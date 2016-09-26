@@ -56,8 +56,11 @@
     <Folder Include="public\" />
     <Folder Include="public\css\" />
     <Folder Include="typings\globals\body-parser\" />
+    <Folder Include="typings\globals\connect-flash\" />
+    <Folder Include="typings\globals\cookie-parser\" />
     <Folder Include="typings\globals\ejs-locals\" />
     <Folder Include="typings\globals\ejs\" />
+    <Folder Include="typings\globals\express-session\" />
     <Folder Include="typings\globals\mongodb\" />
     <Folder Include="views\" />
     <Folder Include="typings\" />
@@ -71,8 +74,11 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="typings\globals\body-parser\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\connect-flash\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\cookie-parser\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\ejs-locals\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\ejs\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\express-session\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\express\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\jade\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\mongodb\index.d.ts" />
