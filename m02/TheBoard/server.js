@@ -6,6 +6,8 @@ var ejsEngine = require("ejs-locals");
 
 var controllers = require("./controllers");
 
+var session = require("express-session");
+var cookieParser = require("cookie-parser");
 var flash = require("connect-flash");
 
 //app.set("view engine", "jade");
@@ -20,8 +22,8 @@ app.set("view engine", "vash");
 app.use(bodyParser.urlencoded({ extended: false }))
 
 //Opt into connect-flash and session state
-app.use(express.cookieParser());
-app.use(express.session({ secret: "EncryptionKeyCanBeAnything" }));
+app.use(cookieParser());
+app.use(session({ secret: "EncryptionKeyCanBeAnything" }));
 app.use(flash());
 
 // Set the public static resourc folder
