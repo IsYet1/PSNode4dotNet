@@ -27,7 +27,12 @@
             };
 
             data.addNote(categoryName, noteToInsert, function (err) {
-
+                if (err) {
+                    res.send(400, "Failed to add the note to data store");
+                } else {
+                    res.set("Content-Type", "application/json");
+                    res.send(201, noteToInsert); //Send back an ok and then send back the note that was inserted.
+                }
             });
         });
 
