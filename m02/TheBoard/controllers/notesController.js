@@ -13,7 +13,7 @@
                     res.send(400, err);
                 } else {
                     res.set("Content-Type", "application/json");
-                    res.send(notes);
+                    res.send(notes.notes); // notes.notes will only send back the actual notes.
                 }
             });
         });
