@@ -22,6 +22,11 @@
 
         });
 
+        app.get("/notes/:categoryName", function (req, res) {
+            var categoryName = req.params.categoryName;
+            res.render("notes", { title: categoryName });
+        });
+
         app.post("/newCategory", function (req, res) {
             var categoryName = req.body.categoryName; //Form data will be in the request body. req.body. Form encoded data.
             console.log(categoryName);
