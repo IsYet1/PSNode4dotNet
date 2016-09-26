@@ -21,8 +21,8 @@
         app.post("/api/notes/:categoryName", function (req, res) {
             var categoryName = req.params.categoryName;
             var noteToInsert = {
-                note: "req.body.note",
-                color: "req.body.color",
+                note: req.body.note,
+                color: req.body.color,
                 author: "From API"
             };
 
