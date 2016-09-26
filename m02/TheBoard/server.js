@@ -20,6 +20,7 @@ app.set("view engine", "vash");
 //Opt into Express Services
 //app.use(bodyParser.urlencoded());
 app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.json()); //Add this for the json parsing needed for API processing.
 
 //Opt into connect-flash and session state
 app.use(cookieParser());
