@@ -44,3 +44,4 @@ mongodb
 *.ns
 *.lock
 m02/TheBoard/mongodb/data/mongod.lock
+*.lock
