@@ -6,25 +6,15 @@
 	
 	@html.block("body", function(model){
 
-<div>
+<div ng-app="notesView">
 	<a href="/" class="btn btn-info">Back</a>
-	<div>
-		<div class="note note-yellow">
-			<div>This is a sample note.</div>
-			<div class="note-author"><small>Shawn Wildermuth</small></div>
+	<div ng-controller="notesViewController">
+		<div ng-repeat="n in notes" ng-class="'note-' + n.color">
+			<div>{{n.note}}</div>
+			<div class="note-author"><small>-{{n.author}}</small></div>
 		</div>
 	</div>
-	<div>
-		<div class="note note-blue">
-			<div>This is a sample note.</div>
-			<div class="note-author"><small>Shawn Wildermuth</small></div>
-		</div>
-	</div>	<div>
-		<div class="note note-green">
-			<div>This is a sample note.</div>
-			<div class="note-author"><small>Shawn Wildermuth</small></div>
-		</div>
-	</div></div>
+</div>
 
 	})
 })
