@@ -3,26 +3,27 @@
     var theModule = angular.module("notesView", []);
 
     theModule.controller("notesViewController",
-        ["$scope",
-            function ($scope) {
-                $scope.notes = [
-                    {
-                        note: "Hello World",
-                        color: "yellow",
-                        author: "Shawn W"
-                    },
-                    {
-                        note: "Hello World again",
-                        color: "blue",
-                        author: "Shawn W"
-                    },
-                    {
-                        note: "Hello World last",
-                        color: "green",
-                        author: "Shawn W"
-                    }
-                ];
+        ["$scope", "$window", "$http",
+            function ($scope, $window, $http) {
+                $scope.notes = [];
+
+                var urlParts = $window.location.pathname.split("/");
+                var categoryName = urlParts[urlParts.length - 1];
+
+                var notesUrl = "/api/notes/" + categoryName;
+
+                $http.get(notesUrl)
+                    .then(function (result) {
+                            $scope.notes = result.data;
+                        }, function (err) {
+                            //TODO: Handle Error. Use the view injection technique in previous modules.
+                        }
+                    )
             }
         ]);
 
 })(window.angular);
+
+/*
+Notes: Use $window so that it's injectable.
+*/
