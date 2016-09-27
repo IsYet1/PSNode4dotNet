@@ -1,11 +1,15 @@
 ﻿//notesView.js
 (function (angular) {
-    var theModule = angular.module("notesView", []);
+    var theModule = angular.module("notesView", ["ui.bootstrap"]);
 
     theModule.controller("notesViewController",
         ["$scope", "$window", "$http",
             function ($scope, $window, $http) {
                 $scope.notes = [];
+                $scope.newNotes = {
+                    note: "",
+                    color: "yellow"
+                };
 
                 var urlParts = $window.location.pathname.split("/");
                 var categoryName = urlParts[urlParts.length - 1];
